@@ -150,9 +150,9 @@
     padding: 20px;
     text-align: center;
     position: absolute;
-    top: 100%;
+    top: 0%;
     left: 50%;
-    transform: translate(-50%, 100%);
+    transform: translate(-50%, 40%);
     font-size: 25px;
     z-index: 9999;
   }
@@ -173,5 +173,14 @@
   }
   .name__org span {
     color: #57ad56;
+  }
+}
+
+@media screen and (max-width: 408px) {
+  .burger__menu {
+    position: relative;
+  }
+  .burger {
+    position: relative;
   }
 }

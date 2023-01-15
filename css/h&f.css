@@ -73,6 +73,12 @@ header button:hover {
   }
 }
 
+@media screen and (max-width: 408px) {
+  .logo {
+    display: none;
+  }
+}
+
 .logo:visited {
   color: rgb(51, 42, 42);
 }

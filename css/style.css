@@ -292,3 +292,13 @@ body {
   font-size: 14px;
   line-height: 30px;
 }
+
+@media screen and (max-width: 767px) {
+  .btn__sign {
+    width: 290px;
+  }
+  .btn__sign h6 {
+    font-size: 18px;
+    letter-spacing: normal;
+  }
+}
