@@ -1,16 +1,40 @@
 .container__back {
   visibility: hidden;
+  animation-name: stels;
+  animation-duration: .5s;
   height: 100px;
   width: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
+
+@keyframes stels {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.5;
+    visibility: hidden;
+  }
+  70% {
+    opacity: 0.1;
+    visibility: hidden;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 
 .burger__menu {
   display: none;
 
   position: absolute;
   right: 100px;
-
 }
 
 .burger {
@@ -27,7 +51,6 @@
 .burger:hover {
   border-radius: 0;
   background-color: #262626;
-  
 }
 
 .burger span {
@@ -38,10 +61,10 @@
   width: 24px;
   top: 50%;
   left: 8px;
-
 }
 
-.burger span::before, .burger span::after {
+.burger span::before,
+.burger span::after {
   display: block;
   position: absolute;
   height: 2px;
@@ -60,12 +83,13 @@
 }
 
 .burger__anim span {
-  transition:background 0s, 0.3s;
+  transition: background 0s, 0.3s;
 }
 
-.burger__anim span::before, .burger__anim span::after {
+.burger__anim span::before,
+.burger__anim span::after {
   transition-duration: 0.3s;
-  transition-delay: 0,3s, 0s;
+  transition-delay: 0, 3s, 0s;
 }
 
 .burger__anim span::before {
@@ -75,9 +99,6 @@
 .burger__anim span::after {
   transition-property: bottom, transform;
 }
-
-
-
 
 .burger__anim.is-active span {
   background: none;
@@ -93,7 +114,9 @@
   transform: rotate(45deg);
 }
 
-
+.burger__content {
+  display: none;
+}
 
 .burg__nav {
   display: none;
@@ -102,6 +125,7 @@
 .burg__nav li {
   list-style: none;
 }
+
 
 @media screen and (max-width: 767px) {
   .wrap_head {
@@ -116,6 +140,7 @@
   }
   .burger__content {
     display: none;
+    transition-delay: .4s all;
   }
   .burg__nav {
     display: flex;
@@ -149,6 +174,4 @@
   .name__org span {
     color: #57ad56;
   }
-
 }
-

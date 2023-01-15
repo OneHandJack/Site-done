@@ -56,10 +56,10 @@ header button:hover {
 
 .wrap_head {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  max-width: 1900px;
+  max-width: 1200px;
   height: 85px;
 }
 

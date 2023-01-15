@@ -54,5 +54,6 @@ burger.addEventListener("click", function(e) {
     burger_content.style.display = "none";
     back.classList.remove("container__back");
     logo_text.style.display = "block";
+    body.style.overflow = "visible";
   }
 })
