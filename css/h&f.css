@@ -1,0 +1,306 @@
+header {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  box-shadow: 10px 5px 15px #efefef;
+
+}
+
+@media screen and (max-width: 992px) {
+  header {
+  position: relative;
+  }
+
+}
+
+header p {
+  cursor: pointer;
+}
+
+header article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+}
+
+header button {
+  width: 100px;
+  height: 55px;
+  border-radius: 2px;
+  border: 1px solid #e0e0e0;
+  background: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  transition: all 1.2s ease;
+}
+
+@media screen and (max-width: 767px) {
+  header button {
+    width: 75px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+header button:hover {
+  background-color: #c2c1c1;
+  border-radius: 90px;
+}
+
+
+
+.wrap_head {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1900px;
+  height: 85px;
+}
+
+.logo {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    font-size: 20px;
+  }
+}
+
+.logo:visited {
+  color: rgb(51, 42, 42);
+}
+
+@media screen and (max-width: 767px) {
+  .logo_f {
+    margin: 0 auto;
+  }
+}
+
+.logo span {
+  color: #57ad56;
+  
+}
+
+
+.wrapper_down {
+  background-color: #262626;
+}
+
+footer {
+  background-color: #262626;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .logo {
+  cursor: pointer;
+  height: 150px;
+  color: whitesmoke;
+  font-size: 55px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+@media screen and (max-width: 767px) {
+  footer .logo {
+    font-size: 25px;
+    height: 75px;
+  }
+}
+
+.information {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+
+.option__inf {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .option__inf{
+    margin: 0 auto;
+    text-align: center;
+    flex-basis: 100%;
+  }
+  .svg__sm {
+    margin: 0 auto;
+  }
+}
+
+.option__inf select {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 10px;
+  color: #ffffff;
+  background: #3b3b3b;
+  border-radius: 15px;
+  width: 250px;
+  height: 40px;
+  border: none;
+}
+
+.option__inf p {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.option__inf p span {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 20px;
+  color: #49a144;
+}
+
+.svg__sm {
+  fill: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 35px;
+}
+
+
+.company {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+  .company {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .option__inf select {
+    font-size: 15px;
+    margin: 0 auto;
+  }
+  .option__inf p, .option__inf p span {
+    font-size: 15px;
+  }
+  .company {
+    flex-basis: 100%;
+    align-items: center;
+  }
+}
+
+.company p {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .company p {
+    font-size: 18px;
+  }
+}
+
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 10px;
+  color: #ffffff;
+}
+
+.sm {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  height: 400px;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .sm {
+    margin: 0 auto;
+  }
+  .faq {
+    font-size: 18px;
+    flex-basis: 100%;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 18px;
+  }
+}
+
+.rights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 55px;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+
+@media screen and (max-width: 767px) {
+  .rights {
+    flex-direction: column;
+    font-size: 16px;
+    flex-basis: 100%;
+    margin: 0 auto;
+    align-self: center;
+    font-size: 18px;
+  }
+}
+
+
+header a {
+  color: #000000;
+}
+
+header a:visited {
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover,
+img:hover {
+  scale: 1.08;
+}
+
+img {
+  transition: 0.5s ease-out;
+}
+

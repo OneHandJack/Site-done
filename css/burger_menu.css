@@ -1,0 +1,154 @@
+.container__back {
+  visibility: hidden;
+  height: 100px;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.burger__menu {
+  display: none;
+
+  position: absolute;
+  right: 100px;
+
+}
+
+.burger {
+  cursor: pointer;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #262626;
+  position: relative;
+  border: none;
+  transition: none;
+}
+
+.burger:hover {
+  border-radius: 0;
+  background-color: #262626;
+  
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 24px;
+  top: 50%;
+  left: 8px;
+
+}
+
+.burger span::before, .burger span::after {
+  display: block;
+  position: absolute;
+  height: 2px;
+  background-color: #fff;
+  left: 0;
+  width: 100%;
+  content: "";
+}
+
+.burger span::before {
+  top: 10.5px;
+}
+
+.burger span::after {
+  bottom: 10.5px;
+}
+
+.burger__anim span {
+  transition:background 0s, 0.3s;
+}
+
+.burger__anim span::before, .burger__anim span::after {
+  transition-duration: 0.3s;
+  transition-delay: 0,3s, 0s;
+}
+
+.burger__anim span::before {
+  transition-property: top, transform;
+}
+
+.burger__anim span::after {
+  transition-property: bottom, transform;
+}
+
+
+
+
+.burger__anim.is-active span {
+  background: none;
+}
+
+.burger__anim.is-active span::before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.burger__anim.is-active span::after {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+
+
+.burg__nav {
+  display: none;
+}
+
+.burg__nav li {
+  list-style: none;
+}
+
+@media screen and (max-width: 767px) {
+  .wrap_head {
+    justify-content: space-between;
+    padding-left: 105px;
+  }
+  .burger__menu {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+  .burger__content {
+    display: none;
+  }
+  .burg__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    font-size: 25px;
+    z-index: 9999;
+  }
+  .burg__nav .btn__in {
+    width: 120px;
+    height: 55px;
+    border-radius: 15px;
+    font-size: 20px;
+  }
+  .burg__nav li {
+    color: rgb(0, 0, 0);
+  }
+  .name__org {
+    font-size: 30px;
+    position: relative;
+    top: -50px;
+    border-bottom: 1px solid grey;
+  }
+  .name__org span {
+    color: #57ad56;
+  }
+
+}
+
